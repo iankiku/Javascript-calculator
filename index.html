@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Basic Calculator</title>
+  </head>
+  <body>
+   
+    <div class="container jumbotron">
+       
+        <div class="table-responsive-sm">
+                <form id="lcd">
+                        <h3 class="display-4">Javascript Calculator </h3>
+                    <input class="form-control form-control-sm" type="text" name="lcd-display" id="lcd-display" value='123+3654' readonly/><br/>
+                    <input class="form-control form-control-md" type="text" name="lcd-input" id="lcd-input" value='0'/>
+                </form>  
+            <table class="table">
+                <tbody>
+                        
+               
+                          
+                   
+                    <tr>
+                            <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg" onclick="num7()">7</button></td>
+                            <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">8</button></td>
+                            <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">9</button></td>
+                        
+                            <th scope="row">
+                                <button type="button" class="btn btn-floating btn-lg color-dark">/</button>
+                            </th>
+                        </tr>
+                        <tr>
+                                <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">4</button></td>
+                                <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">5</button></td>
+                                <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">6</button></td>
+                            
+                                <th scope="row">
+                                    <button type="button" class="btn btn-floating btn-lg color-dark">*</button>
+                                </th>
+                        </tr>
+
+                        <tr>
+                                <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">1</button></td>
+                                <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">2</button></td>
+                                <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">3</button></td>
+                            
+                                <th scope="row">
+                                    <button type="button" class="btn btn-floating btn-lg color-dark">-</button>
+                                </th> 
+                            </tr>
+
+
+                            <tr>
+                                    <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">0</button></td>
+                                    <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">.</button></td>
+                                    <td><button type="button" class="btn btn-digit btn-primary btn-rounded btn-lg">=</button></td>
+                                
+                                    <th scope="row">
+                                        <button type="button" class="btn btn-floating btn-lg color-dark">+</button>
+                                    </th>
+                                </tr>
+
+                              
+                    </tbody>
+                   
+            </table>
+           
+          </div>
+          <p id="footer">Developed by: Ian Kiku | Built with: Javascript & Bootstrap for UI</p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+.jumbotron {
+    width: 100%;
+    max-width: 770px !important;
+
+}
+.btn-digit{
+    width: 100% !important;
+}
+
+.color-dark{
+    color: #fff;
+    background-color: #1C2331 !important
+  }
+
+  #lcd-display{
+      color: rgb(127, 140, 255);
+      background-color: beige;
+      text-align: right;
+  }
+ #lcd-input{
+      text-align: right;
+      color: #37474F;
+      font-size: 1.5em;
+  }
+th{
+   width:  50px;
+}
+#lcd{
+    padding: 0 20px;
+}
+input{
+    max-width: 600px;
+    padding: 15px;
+}
+#footer{
+    text-align: center;
+}

@@ -1,37 +1,93 @@
+body{
+    background-color: #c4dbed;
+}
+
 .jumbotron {
+
+   width: 100%; 
+    width: 576px !important; 
+}
+
+/* #wrapper {
+    text-align: center;
+    padding-top: 20px;
+} */
+
+.table {
     width: 100%;
-    max-width: 770px !important;
-
+    max-width: 330px !important;
+    background-color: #ccc;
+    border-radius: 10px;
+    box-shadow: 0 10px #999;
 }
-.btn-digit{
-    width: 100% !important;
+
+
+#calc-header{
+    text-align: center;
+    padding: 5px;
+    margin: 1px;
+}
+/* colors */
+
+
+#screen {
+    min-width: 100%;
+    background-color: #fff;
+    color: #000; 
+    padding: 10px;
+    margin: 1;
+    border-style: ridge;
 }
 
-.color-dark{
+
+
+
+
+
+.operator {
+    max-width: 25%;
     color: #fff;
-    background-color: #1C2331 !important
-  }
+    background-color: black;
+}
 
-  #lcd-display{
-      color: rgb(127, 140, 255);
-      background-color: beige;
-      text-align: right;
-  }
- #lcd-input{
-      text-align: right;
-      color: #37474F;
-      font-size: 1.5em;
-  }
-th{
-   width:  50px;
+/* raised button */
+
+.btn {
+    padding: 10px 25px;
+    font-size: 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #1C2331;
+    background-color:#c4dbed;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
 }
-#lcd{
-    padding: 0 20px;
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
 }
-input{
-    max-width: 600px;
-    padding: 15px;
+
+
+.btn:active {
+    /* background-color: #3e8e41; */
+    box-shadow: 0 5px rgb(95, 95, 95);
+    transform: translateY(4px);
 }
-#footer{
+
+.btn:disabled{
+    background-color: #ccc; 
+    box-shadow: 0;
+    border-radius: 0;
+}
+
+.color-dark {
+    color: #fff;
+    background-color: #000 !important
+}
+
+#footer, #calcHeader, h4 {
     text-align: center;
 }

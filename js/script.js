@@ -1,41 +1,31 @@
-//  Todo
+//======Todo
 // --- Add backspace function
 // --- % function
 
 // ------------------
-
-// grab element input 
-var screen = document.getElementById('screen');
-// console.log(screen.value);
-// var btnVal = document.querySelector('input').value;
+// grab input element 
+const screen = document.getElementById('screen');
 
 // get all btns
-var btns = document.querySelectorAll('button');
+const btns = document.querySelectorAll('button');
 
 // add click event to buttons
 btns.forEach(function (e) {
-    // this.addEventListener('click', setInput);
     e.addEventListener('click', ()=>{
-        // console.log('you clicked', e.value)
-
         setVal(e)
     })
-   
-    // console.log(newVal)
 });
-
-
 
 var newValue;
 screen.innerHTML = "0";
 
-// main function
+// main calc function
 function setVal(e) {
     // set btn value to newValue
     newValue = e.value;
     if (newValue == '='){
-        // calculate
-        screen.innerHTML = eval(screen.innerHTML);
+
+        screen.innerHTML = eval(screen.innerHTML); //use eval()function
     }else if (newValue == "C"){
         screen.innerHTML= '0';  //incase c is passed reset
     }else{
@@ -45,7 +35,4 @@ function setVal(e) {
             screen.innerHTML += newValue; //append new value
         }
     }
-
-
 }
-

@@ -1,196 +1,120 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-
-    <link rel="stylesheet" href="./css/style.css">
-
-    <title>Basic Calculator</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        name="viewport"><!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        rel="stylesheet">
+  <link href="./css/style.css"
+        rel="stylesheet">
+  <title>JS Calculator</title>
 </head>
-
 <body>
-
-    <div class="container jumbotron">
-        <h4>Javascript Calculator </h4>
-        <div id="wrapper">
-            <!-- <h3 class="display-4">Javascript Calculator </h3> -->
-
-
-
-
-
-
-            <table class="table">
-
-
-                <tbody>
-
-
-                    <tr>
-
-
-                        <td colspan="5">
-                            <div id="calcHeader">
-                                <p>Basic JavaScript Calculator</p>
-                                <br>
-                                <img src="http://icons.iconarchive.com/icons/blackvariant/shadow135-system/1024/Calculator-icon.png" alt="logo" width="50px"
-                                    height="50px">
-                            </div>
-
-
-                            <p class="well" id="screen" value="0"></p>
-                        </td>
-
-
-
-
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="reset" class="btn btn-digit btn-primary btn-rounded btn-md" value="C">C</button>
-                        </td>
-
-                        <td>
-                            <button type="reset" class="btn btn-digit btn-primary btn-rounded btn-md" value="cc" disabled >
-                                <=</button>
-                        </td>
-                        <td>
-                            <button type="reset" class="btn btn-digit btn-primary btn-rounded btn-md" value="%">%
-                            </button>
-                        </td>
-                        <th scope="row">
-                            <button type="reset" class="btn btn-digit btn-primary btn-rounded btn-md" value="/">/</button>
-                        </th>
-                    </tr>
-                    <tr>
-                        <!-- <th scope="row"></th> -->
-
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="7" data-num="7">7</button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="8" data-num="8">8</button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="9">9</button>
-                        </td>
-
-                        <th scope="row">
-                            <button type="button" class="btn btn-floating btn-md color-dark" value="*">*</button>
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="4">4</button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="5">5</button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="6">6</button>
-                        </td>
-
-                        <th scope="row">
-                            <button type="button" class="btn btn-floating btn-md color-dark" value="-">-</button>
-                        </th>
-                    </tr>
-
-                    <tr>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="1">1</button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="2">2</button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="3">3</button>
-                        </td>
-
-                        <th scope="row">
-                            <button type="button" class="btn btn-floating btn-md color-dark" value="+">+</button>
-                        </th>
-                    </tr>
-
-
-                    <tr>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="-">-+</button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value="0">0</button>
-                        </td>
-                        <td>
-                            <button type="button" class="btn btn-digit btn-primary btn-rounded btn-md" value=".">.</button>
-                        </td>
-
-                        <th scope="row">
-                            <button type="button" class="btn btn-floating btn-md color-dark" value="=">=</button>
-                        </th>
-                    </tr>
-
-
-                </tbody>
-
-            </table>
-
-        </div>
-        <p id="footer">Developed by: Ian Kiku | Built with: Javascript & Bootstrap for UI</p>
+  <div class="container jumbotron">
+    <h4>Javascript Calculator</h4>
+    <div id="wrapper">
+      <!-- <h3 class="display-4">Javascript Calculator </h3> -->
+      <table class="table">
+        <tbody>
+          <tr>
+            <td colspan="5">
+              <div id="calcHeader">
+              <p>Basic JavaScript Calculator</p><br>
+              <img alt="logo"
+                   height="50px"
+                   src="http://icons.iconarchive.com/icons/blackvariant/shadow135-system/1024/Calculator-icon.png"
+                   width="50px"></div>
+              <p class="well"
+                 id="screen"
+                 value="0"></p>
+            </td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="reset"
+                    value="C">C</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    disabled
+                    type="reset"
+                    value="cc">&lt;=</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="reset"
+                    value="%">%</button></td>
+            <th scope="row"><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="reset"
+                    value="/">/</button></th>
+          </tr>
+          <tr>
+            <!-- <th scope="row"></th> -->
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    data-num="7"
+                    type="button"
+                    value="7">7</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    data-num="8"
+                    type="button"
+                    value="8">8</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="9">9</button></td>
+            <th scope="row"><button class="btn btn-floating btn-md color-dark"
+                    type="button"
+                    value="*">*</button></th>
+          </tr>
+          <tr>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="4">4</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="5">5</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="6">6</button></td>
+            <th scope="row"><button class="btn btn-floating btn-md color-dark"
+                    type="button"
+                    value="-">-</button></th>
+          </tr>
+          <tr>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="1">1</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="2">2</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="3">3</button></td>
+            <th scope="row"><button class="btn btn-floating btn-md color-dark"
+                    type="button"
+                    value="+">+</button></th>
+          </tr>
+          <tr>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="-">-+</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value="0">0</button></td>
+            <td><button class="btn btn-digit btn-primary btn-rounded btn-md"
+                    type="button"
+                    value=".">.</button></td>
+            <th scope="row"><button class="btn btn-floating btn-md color-dark"
+                    type="button"
+                    value="=">=</button></th>
+          </tr>
+        </tbody>
+      </table>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-    <!-- app script -->
-    <script src="js/script.js"></script>
+    <p id="footer">Developed by: Ian Kiku | Built with: Javascript - Bootstrap for UI</p>
+  </div><!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> <!-- app script -->
+   
+  <script src="js/script.js"></script>
 </body>
-
 </html>
